@@ -2,7 +2,8 @@
     font-family: 'Font';
     src: url('utils/font1.ttf') format('truetype');
 }
-
+#taxi,
+#spotify,
 #welcome,
 #github,
 #vk {
@@ -43,4 +44,43 @@ body {
     bottom: 0;
     opacity: 0;
     cursor: pointer;
+}
+#corner-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+#corner-box p {
+    color: #333;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#corner-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#corner-box button:hover {
+    background-color: #0056b3;
+}
+
+#corner-box img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: -2px;
 }

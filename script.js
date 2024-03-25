@@ -34,10 +34,32 @@ $(document).ready(function() {
             });
         });
     });
+
+    $('<img id="spotify" src="utils/spotify.png">').appendTo('body');
+    $('#spotify').animate({
+        opacity: 1,
+        marginBottom: '450px',
+        marginLeft: '195px'
+    }, 1000, function() {
+        $('#spotify').click(function() {
+            window.open('https://open.spotify.com/user/31e6er6ajpp2krsizawn743szmoq?si=4a449ec37e9f4bb1', '_blank');
+        });
+    });
+});
+
+$('<img id="taxi" src="utils/taxi.jpg">').appendTo('body');
+$('#taxi').animate({
+    opacity: 1,
+    marginBottom: '450px',
+    marginLeft: '-195px'
+}, 1000, function() {
+    $('#spotify').click(function() {
+        window.open('https://ru.busti.me/spb/timetable/', '_blank');
+    });
 });
 
 $(document).keydown(function(event) {
-    if ((event.key === "z" || event.key === "c") && event.originalEvent.repeat === false) {
+    if ((event.key === "z" || event.key === "Z") && event.originalEvent.repeat === false) {
         window.location.href = 'poker.html';
     }
 });
